@@ -1,4 +1,4 @@
-| Name | Which |
+| Name | Function |
 | --- | --- |
 | NPM | Package Manager |
 | Astro | Web Framework |
