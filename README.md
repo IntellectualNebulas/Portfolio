@@ -1,6 +1,7 @@
 ## About
 
 A way for me to show off what I'm developing. Will be publicly hosted and continually worked on over time!
+Github Pages will be used for hosting
 
 ## Link to Site - "TBC, Still in Early Development"
 
@@ -10,6 +11,7 @@ A way for me to show off what I'm developing. Will be publicly hosted and contin
 | --- | --- |
 | NPM | Package Manager |
 | Astro | Web Framework |
+| Github Pages | Server Host |
 
 Dependabot is used for NPM Security fixes
 
