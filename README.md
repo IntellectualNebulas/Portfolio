@@ -2,6 +2,8 @@ A way for me to show off what I'm developing. Will be publicly hosted and contin
 
 ## Link to Site - "TBC, Still in Early Development"
 
+## Dependencies
+
 | Name | Function |
 | --- | --- |
 | NPM | Package Manager |
