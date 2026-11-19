@@ -1,8 +1,11 @@
 ---
 // src/pages/index.astro
 import "../style/global.css"
+
 import { AchievedQuali } from "../data/achieved";
 import { ProjectedQuali } from "../data/projected";
+import { Workexp } from "../data/workexp";
+
 
 import GithubRepos from "../components/GithubRepos.astro";
 
@@ -31,6 +34,19 @@ const featured = AchievedQuali.filter((p) => p.featured);
 		</div>
 		
 		<br><br>
+
+		<div class = "center">
+			<div class = "box">
+				<div class = "aboutme">
+					<p>I am hoping to become a Graduate Apprentice in either
+						 Software Development or AI & Data Science.<br>
+						As part of my FA Work Placement I am part of a 2 man team in
+					    charge of replacing the existing paper based contracting system
+					    with a modern, sleek alternative. <br>Through this experience I have created my
+						first live project that will be regularly used and learned PHP, via PHP Storm & Laravel!</p>
+				</div>
+			</div>
+		</div>
 
 		<div class ="center">
 			<div class = "box">
@@ -70,6 +86,26 @@ const featured = AchievedQuali.filter((p) => p.featured);
 
 		<div class ="center">
 			<div class = "box">
+				<h2><center>Work Experience</center></h2>
+					<div class = "center">
+						<ul class = "qualigrid">
+							{Workexp.map((Workexp) => (
+								<li class = "qualiA">
+									<a href={Workexp.org}>{Workexp.title}</a>
+									<p>{Workexp.org}</p>
+									<p>{Workexp.paid}</p>
+									<small>{Workexp.period}</small>
+								</li>
+							))}
+						</ul>
+					</div>
+			</div>
+		</div>
+
+
+
+		<div class ="center">
+			<div class = "box">
 				<h2><center>My Public Github Repositories</center></h2>
 					<div class = "center">
 						<GithubRepos/>
@@ -80,7 +116,7 @@ const featured = AchievedQuali.filter((p) => p.featured);
 		<br><br><br><br>
 
 		<div class = "f">
-			<h1>© 2026 Ciaran Bell</h1>
+			<p>© 2026 Ciaran Bell</p>
 		</div>
 
 	</body>

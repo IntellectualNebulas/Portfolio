@@ -56,6 +56,13 @@ body {
   align-items: center;
 }
 
+.aboutme {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  gap: 1rem;
+}
+
 a {
     color: #fff;
     text-decoration: none;
