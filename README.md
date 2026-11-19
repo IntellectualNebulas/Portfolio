@@ -1,4 +1,9 @@
-## Commands
+## Dependencies
+
+Dependabot is used for NPM Security Fixes
+Astro is the Web Framework
+
+## Astro Commands
 
 All commands are run from the root of the project, from a terminal:
 
@@ -14,5 +19,3 @@ All commands are run from the root of the project, from a terminal:
 ## 👀 Want to learn more?
 
 Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
-
-Dependabot is used for Security Fixes only
