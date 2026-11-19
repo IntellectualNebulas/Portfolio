@@ -1,7 +1,9 @@
-## Dependencies
+| Name | Which |
+| --- | --- |
+| NPM | Package Manager |
+| Astro | Web Framework |
 
-Dependabot is used for NPM Security Fixes
-Astro is the Web Framework
+Dependabot is used for NPM Security fixes
 
 ## Astro Commands
 
