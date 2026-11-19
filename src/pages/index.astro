@@ -1,16 +1,87 @@
 ---
+// src/pages/index.astro
+import "../style/global.css"
+import { AchievedQuali } from "../data/achieved";
+import { ProjectedQuali } from "../data/projected";
+
+import GithubRepos from "../components/GithubRepos.astro";
+
+const featured = AchievedQuali.filter((p) => p.featured);
 ---
 
 <html lang="en">
+
 	<head>
+		
 		<meta charset="utf-8" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<link rel="icon" href="/favicon.ico" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
+		<title>My Portfolio!</title>
+
 	</head>
+
 	<body>
-		<h1>Astro</h1>
+
+		<div class = "topbar">
+			<div class = "center">
+				<h1>Welcome!</h1>
+			</div>
+		</div>
+		
+		<br><br>
+
+		<div class ="center">
+			<div class = "box">
+				<h2><center>Projected Computing-based Qualifications</center></h2>
+					<div class = "center">
+						<ul class = "qualigrid">
+							{ProjectedQuali.map((ProjectedQuali) => (
+								<li class = "qualiA">
+									<a href={ProjectedQuali.org}>{ProjectedQuali.title}</a>
+									<p>{ProjectedQuali.org}</p>
+									<p>{ProjectedQuali.details}</p>
+									<small>{ProjectedQuali.period}</small>
+								</li>
+							))}
+						</ul>
+					</div>
+			</div>
+		</div>
+
+		<div class ="center">
+			<div class = "box">
+				<h2><center>Achieved Computing-based Qualifications</center></h2>
+					<div class = "center">
+						<ul class = "qualigrid">
+							{AchievedQuali.map((AchievedQuali) => (
+								<li class = "qualiA">
+									<a href={AchievedQuali.org}>{AchievedQuali.title}</a>
+									<p>{AchievedQuali.org}</p>
+									<p>{AchievedQuali.details}</p>
+									<small>{AchievedQuali.period}</small>
+								</li>
+							))}
+						</ul>
+					</div>
+			</div>
+		</div>
+
+		<div class ="center">
+			<div class = "box">
+				<h2><center>My Public Github Repositories</center></h2>
+					<div class = "center">
+						<GithubRepos/>
+					</div>
+			</div>
+		</div>
+
+		<br><br><br><br>
+
+		<div class = "f">
+			<h1>© 2026 Ciaran Bell</h1>
+		</div>
+
 	</body>
 </html>

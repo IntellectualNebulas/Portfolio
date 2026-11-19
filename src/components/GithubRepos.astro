@@ -1,0 +1,62 @@
+---
+const username = "IntellectualNebulas";
+
+const res = await fetch(
+  `https://api.github.com/users/${username}/repos?per_page=100&sort=updated`,
+  {
+    headers: {
+      Accept: "application/vnd.github+json",
+      // Optional but recommended: raises the rate limit from 60/hr to 5000/hr
+      ...(import.meta.env.GITHUB_TOKEN && {
+        Authorization: `Bearer ${import.meta.env.GITHUB_TOKEN}`,
+      }),
+    },
+  }
+);
+
+if (!res.ok) throw new Error(`GitHub API error: ${res.status}`);
+
+const repos = (await res.json())
+  .filter((r) => !r.fork && !r.archived)          // skip forks/archived
+  .sort((a, b) => b.stargazers_count - a.stargazers_count)
+  .slice(0, 9);                                    // show top 9
+---
+
+<ul class="repo-grid">
+  {repos.map((repo) => (
+    <li>
+      <a href={repo.html_url} target="_blank" rel="noopener">
+        <h3>{repo.name}</h3>
+        <p>{repo.description ?? "No description"}</p>
+        <small>
+          {repo.language && <span>{repo.language}</span>}
+          <span>★ {repo.stargazers_count}</span>
+        </small>
+      </a>
+    </li>
+  ))}
+</ul>
+
+<style>
+.repo-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  list-style: none;
+  padding: 0;
+}
+.repo-grid li {
+  flex: 1 1 260px;
+}
+  a {
+    display: block;
+    height: 100%;
+    padding: 1rem;
+    border: 1px solid #6B6B6B;
+    border-radius: 8px;
+    text-decoration: none;
+    color: inherit;
+  }
+  a:hover { border-color: #888; }
+  small { display: flex; gap: 1rem; opacity: 0.7; }
+</style>
