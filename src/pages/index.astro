@@ -37,9 +37,10 @@ const featured = AchievedQuali.filter((p) => p.featured);
 
 		<div class = "center">
 			<div class = "box">
+				<h1><center>About Me!</center></h1>
 				<div class = "aboutme">
 					<p>I am hoping to become a Graduate Apprentice in either
-						 Software Development or AI & Data Science.<br>
+						 Software Development or AI & Data Science.<br> I have also send my UCAS away to Glasgow Calie and UWS for Software Development and Computing.<br>
 						As part of my FA Work Placement I am part of a 2 man team in
 					    charge of replacing the existing paper based contracting system
 					    with a modern, sleek alternative. <br>Through this experience I have created my
@@ -55,7 +56,7 @@ const featured = AchievedQuali.filter((p) => p.featured);
 						<ul class = "qualigrid">
 							{ProjectedQuali.map((ProjectedQuali) => (
 								<li class = "qualiA">
-									<a href={ProjectedQuali.org}>{ProjectedQuali.title}</a>
+									<p>{ProjectedQuali.title}</p>
 									<p>{ProjectedQuali.org}</p>
 									<p>{ProjectedQuali.details}</p>
 									<small>{ProjectedQuali.period}</small>
@@ -73,7 +74,7 @@ const featured = AchievedQuali.filter((p) => p.featured);
 						<ul class = "qualigrid">
 							{AchievedQuali.map((AchievedQuali) => (
 								<li class = "qualiA">
-									<a href={AchievedQuali.org}>{AchievedQuali.title}</a>
+									<p>{AchievedQuali.title}</p>
 									<p>{AchievedQuali.org}</p>
 									<p>{AchievedQuali.details}</p>
 									<small>{AchievedQuali.period}</small>
@@ -91,7 +92,7 @@ const featured = AchievedQuali.filter((p) => p.featured);
 						<ul class = "qualigrid">
 							{Workexp.map((Workexp) => (
 								<li class = "qualiA">
-									<a href={Workexp.org}>{Workexp.title}</a>
+									<p>{Workexp.title}</p>
 									<p>{Workexp.org}</p>
 									<p>{Workexp.paid}</p>
 									<small>{Workexp.period}</small>
@@ -113,7 +114,15 @@ const featured = AchievedQuali.filter((p) => p.featured);
 			</div>
 		</div>
 
-		<br><br><br><br>
+		<div class = "center">
+				<div class = "box">
+					<h2><center>Get in Contact!</center></h2>
+					<input type="button" onclick="location.href='https://github.com/IntellectualNebulas';" value="My Github" />					<br><br>
+					<input type="button" onclick="location.href='https://www.linkedin.com/in/ciaran-bell-4b7007443/';" value="My Linkedin" />					<br><br>
+
+			</div>
+		</div>
+		<br><br><br>
 
 		<div class = "f">
 			<p>© 2026 Ciaran Bell</p>
