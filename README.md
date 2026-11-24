@@ -9,6 +9,7 @@ Github Pages will be used for hosting
 
 | Name | Function |
 | --- | --- |
+| Node.js | Runtime |
 | NPM | Package Manager |
 | Astro | Web Framework |
 | Github Pages | Server Host |
