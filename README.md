@@ -1,31 +1,22 @@
-# Astro Starter Kit: Minimal
+## About
 
-```sh
-npm create astro@latest -- --template minimal
-```
+A way for me to show off what I'm developing. Will be publicly hosted and continually worked on over time!
+Github Pages will be used for hosting
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+## Link to Site - "TBC, Still in Early Development"
 
-## 🚀 Project Structure
+## Dependencies
 
-Inside of your Astro project, you'll see the following folders and files:
+| Name | Function |
+| --- | --- |
+| Node.js | Runtime |
+| NPM | Package Manager |
+| Astro | Web Framework |
+| Github Pages | Server Host |
 
-```text
-/
-├── public/
-├── src/
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
+Dependabot is used for NPM Security fixes
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
-
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
-
-Any static assets, like images, can be placed in the `public/` directory.
-
-## 🧞 Commands
+## Astro Commands
 
 All commands are run from the root of the project, from a terminal:
 
