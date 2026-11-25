@@ -69,7 +69,8 @@ input {
     color: #fff;
     border-radius: 2px solid #6B6B6B;
 
-    font-size:22px;
+    font-size:1rem;
+
     word-wrap: break-word;
     width: 80%;
     max-width: 80%;
@@ -85,7 +86,8 @@ input:hover {
     color: #fff;
     border-radius: 2px solid #454444;
 
-    font-size:22px;
+    font-size:1rem;
+    
     word-wrap: break-word;
     width: 80%;
     max-width: 80%;
