@@ -41,7 +41,7 @@ const repos = (await res.json())
 .repo-grid {
   display: flex;
   flex-wrap: wrap;
-  gap: 1rem;
+  gap: 4rem;
   list-style: none;
   padding: 0;
 }
@@ -57,6 +57,7 @@ const repos = (await res.json())
     text-decoration: none;
     color: inherit;
   }
+  
   a:hover { border-color: #888; }
   small { display: flex; gap: 1rem; opacity: 0.7; }
 </style>

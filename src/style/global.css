@@ -14,18 +14,6 @@ body {
 
 }
 
-.footer {
-
-    height: 55;
-    text-align: center;
-    width: 100%;
-
-    position: fixed;
-    bottom: 0;
-    right: 0;
-
-}
-
 .box {
 
     border:0.6px solid #6B6B6B;
@@ -76,18 +64,16 @@ a {
 input {
 
     font-family: 'Courier New', Courier, monospace;
-    font-size: 22px;
 
     background-color: #24242B;
     color: #fff;
     border-radius: 2px solid #6B6B6B;
 
-    border-radius: 8px;
-    padding:15px 48.3%;
-    width: 40%;
-
-    text-wrap: nowrap;
-
+    font-size:22px;
+    word-wrap: break-word;
+    width: 80%;
+    max-width: 80%;
+    padding: 1% 48.3%;
 }
 
 input:hover {
@@ -99,11 +85,11 @@ input:hover {
     color: #fff;
     border-radius: 2px solid #454444;
 
-    border-radius: 8px;
-    padding:15px 48.3%;
-    width: 40%;
-
-    text-wrap: nowrap;
+    font-size:22px;
+    word-wrap: break-word;
+    width: 80%;
+    max-width: 80%;
+    padding: 1% 48.3%;
 
 }
 
